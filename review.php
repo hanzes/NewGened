@@ -196,20 +196,17 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 
 			<div class="portfolio-wrapper" >
 			<div class="portfolio-items">
-						<a href = "createreview.php" >
+						
 						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-							
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/LOGO/write.jpg" alt=""> </a>
-								
+								<img class="img-responsive" src="images/LOGO/write.jpg" alt="">
 								<div class="portfolio-overlay">
-								
-									<a href ="images/works/portfolio-1.jpg"  ><i class="fa fa-camera-retro"></i></a>
+									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Write your own</h5>
-									<small><a href = "createreview.php" ><p>Click</p></a></small>
+									<p>SHARING</p>
 								</div>
 							</div>	
-						</div></a>
+						</div>
 						</div></div></div></div>
 
 
@@ -235,7 +232,6 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrsci[0][0] ?></h5>
 									<p><?php  echo $arrsci[0][2] ?></p>
-									<a id ="x" class ="x" href=" <?php  echo "showreview.php?SID=" . $arrsci[0][2];  ?>"><p>Link</p></a>
 								</div>
 							</div>	
 						</div>
@@ -246,7 +242,6 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrhum[0][0] ?></h5>
 									<p><?php  echo $arrhum[0][2] ?></p>
-									<a id ="x" class ="x" href=" <?php  echo "showreview.php?SID=" . $arrhum[0][2];  ?>"><p>Link</p></a>
 								</div>
 							</div>	
 						</div>
@@ -258,7 +253,6 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrsoc[0][0] ?></h5>
 									<p><?php  echo $arrsoc[0][2] ?></p>
-									<a id ="x" class ="x" href=" <?php  echo "showreview.php?SID=" . $arrsoc[0][2];  ?>"><p>Link</p></a>
 								</div>
 							</div>	
 						</div>
@@ -269,7 +263,6 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrin[0][0] ?></h5>
 									<p><?php  echo $arrin[0][2] ?></p>
-									<a id ="x" class ="x" href=" <?php  echo "showreview.php?SID=" . $arrin[0][2];  ?>"><p>Link</p></a>
 								</div>
 							</div>	
 						</div>
