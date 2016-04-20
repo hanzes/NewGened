@@ -9,6 +9,7 @@ $signup = array("user" => $_POST['username'],
 	"stdid" => $_POST['stdid'],
 	"fac" => $_POST['fac']);
 $coll->insert($signup); 
-$backurl = $_SESSION["backurl"];
-header("Location : ".$backurl);
+$url = parse_url($_SERVER['HTTP_REFERER']);
+$trimmedHeader = $url['path'];
+header('Location:'.$trimmedHeader);
  ?>
