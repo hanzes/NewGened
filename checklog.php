@@ -5,7 +5,7 @@
 				$_SESSION['check']= 0;
 			}
 			
-			
+			$_SESSION["backurl"] =$_SERVER['HTTP_REFERER'] ;
 			$uri = "mongodb://distdbpro:distdb555@ds023570.mlab.com:23570/distdata";
 			$m = new MongoClient($uri);
 			$db = $m->selectDB("distdata");
@@ -31,7 +31,7 @@
 					}
 				
 				}
-
-				$backurl = $_SESSION["backurl"];
-				header("Location : ".$backurl);
+$url = parse_url($_SERVER['HTTP_REFERER']);
+$trimmedHeader = $url['path'];
+header('Location:'.$trimmedHeader);
 				?>
