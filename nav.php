@@ -58,7 +58,7 @@
 				    	<li><a href="home.php">Home</a></li>
 				    	<li><a href="review.php">About Reviews</a></li>
 				    	<li><a href="rank.php">Ranking</a></li>
-				    	<li><a href="map.php">Maps</a></li>
+				    	<li><a href="map.php">Map</a></li>
 				    	<li><a href="contact.php">Contact Us</a></li>
 						 <li class="dropdown" style="bgcolor:#d9d9d9;">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, <?php echo $_SESSION['username'];?><span class="caret"></span></a>
