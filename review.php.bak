@@ -177,7 +177,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-map-marker"></i>MAP</h2>
+					<h2><i class="fa fa-map-marker"></i>MAPS</h2>
 					<p>Find your PLACE to study your interested GENED.</p>
 				</div>
 			</div>
