@@ -91,10 +91,10 @@
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 				    	<li><a href="index.php">Home</a></li>
-				    	<li><a href="#services">About Reviews</a></li>
-				    	<li><a href="#our-works">Ranking</a></li>
-				    	<li><a href="#pricing">Maps</a></li>
-				    	<li><a href="#our-team">Contact Us</a></li>
+				    	<li><a href="reviews.php">About Reviews</a></li>
+				    	<li><a href="rank.php">Ranking</a></li>
+				    	<li><a href="map.php">Maps</a></li>
+				    	<li><a href="contact.php">Contact Us</a></li>
 				 		<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
 				    	<li><a href="#" data-toggle="modal" data-target="#signup-modal">Signup</a></li>
 					</ul>

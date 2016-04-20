@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Cluster - Creative Portfolio HTML Template</title>
 	
 	<!-- Main CSS file -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
