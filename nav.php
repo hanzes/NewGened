@@ -55,7 +55,7 @@
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-				    	<li><a href="index.php">Home</a></li>
+				    	<li><a href="home.php">Home</a></li>
 				    	<li><a href="review.php">About Reviews</a></li>
 				    	<li><a href="rank.php">Ranking</a></li>
 				    	<li><a href="map.php">Maps</a></li>
@@ -90,7 +90,7 @@
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-				    	<li><a href="index.php">Home</a></li>
+				    	<li><a href="home.php">Home</a></li>
 				    	<li><a href="review.php">About Reviews</a></li>
 				    	<li><a href="rank.php">Ranking</a></li>
 				    	<li><a href="map.php">Maps</a></li>
