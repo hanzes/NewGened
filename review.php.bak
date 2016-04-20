@@ -177,7 +177,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-map-marker"></i>MAPS</h2>
+					<h2><i class="fa fa-map-marker"></i>MAP</h2>
 					<p>Find your PLACE to study your interested GENED.</p>
 				</div>
 			</div>
@@ -225,7 +225,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 			<div class="portfolio-wrapper" >
 			<div class="portfolio-items">
 						
-						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
+						<div class="col-md-3 col-sm-1 work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Science.jpg" alt="">
 								<div class="portfolio-overlay">
@@ -235,7 +235,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 								</div>
 							</div>	
 						</div>
-						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
+						<div class="col-md-3 col-sm-1 work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Human.jpg" alt="">
 								<div class="portfolio-overlay">
@@ -246,7 +246,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							</div>	
 						</div>
 					
-						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
+						<div class="col-md-3 col-sm-1 work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Social.jpg" alt="">
 								<div class="portfolio-overlay">
@@ -256,7 +256,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 								</div>
 							</div>	
 						</div>
-						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
+						<div class="col-md-3 col-sm-1 work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/saha.jpg" alt="">
 								<div class="portfolio-overlay">

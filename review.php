@@ -256,7 +256,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 								</div>
 							</div>	
 						</div>
-						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
+						<div class="col-md-3 col-sm-3work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/saha.jpg" alt="">
 								<div class="portfolio-overlay">
