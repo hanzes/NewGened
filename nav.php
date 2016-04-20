@@ -50,7 +50,7 @@
 				    	<span class="icon-bar"></span>
 				    	<span class="icon-bar"></span>
 					</button>
-					<a class="logo" href="home.php"><img src="images/LOGO/genedreviews.png" alt=""></a>
+					<a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
@@ -58,12 +58,12 @@
 				    	<li><a href="home.php">Home</a></li>
 				    	<li><a href="review.php">About Reviews</a></li>
 				    	<li><a href="rank.php">Ranking</a></li>
-				    	<li><a href="map.php">Map</a></li>
+				    	<li><a href="map.php">Maps</a></li>
 				    	<li><a href="contact.php">Contact Us</a></li>
 						 <li class="dropdown" style="bgcolor:#d9d9d9;">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, <?php echo $_SESSION['username'];?><span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="about.php">Setting</a></li>
+            <li><a href="about.php?username=<?php echo $_SESSION['username'];?>">Setting</a></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>
         </li>
@@ -85,7 +85,7 @@
 				    	<span class="icon-bar"></span>
 				    	<span class="icon-bar"></span>
 					</button>
-					<a class="logo" href="home.php"><img src="images/LOGO/genedreviews.png" alt=""></a>
+					<a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
@@ -93,7 +93,7 @@
 				    	<li><a href="home.php">Home</a></li>
 				    	<li><a href="review.php">About Reviews</a></li>
 				    	<li><a href="rank.php">Ranking</a></li>
-				    	<li><a href="map.php">Map</a></li>
+				    	<li><a href="map.php">Maps</a></li>
 				    	<li><a href="contact.php">Contact Us</a></li>
 				 		<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
 				    	<li><a href="#" data-toggle="modal" data-target="#signup-modal">Signup</a></li>
