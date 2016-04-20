@@ -28,11 +28,7 @@
 	
 </head>
 <!-- HEADER -->
-	<?php 
-	
-	include 'nav.php'; 
-	
-	?>
+	<?include 'nav.php'; ?>
 	<!-- /HEADER -->
 
 <section id="contact">
