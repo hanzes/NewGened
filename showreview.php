@@ -56,7 +56,9 @@ $rate=0;
 $num=0;
 foreach ($cursor as $doc) {
 $sname = array('title'=> $doc["title"],'location' => $doc["location"],'category' => $doc["category"], 'credit' => $doc["credit"],'rate' => $doc["rate"]) ;
-$title = $doc["title"];
+$rate = $rate + $doc["rate"];
+$num = $num + 1 ;
+
 }
 
 $coll1 = $db->rate;
@@ -73,7 +75,7 @@ $dname = array('avgrate'=> $doc1["avgrate"],'count' => $doc1["count"]);  }
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="about-us text-center">
-						<h4><?php echo $title;  ?> &nbsp;  <?php echo $_GET['SID'] ?></h4>
+						<h4><?php echo $sname['title'];  ?> &nbsp;  <?php echo $_GET['SID'] ?></h4>
 						<p>
 							<?php  echo 'Categoty:' . $sname['category'] ;	?>&nbsp; 
 							<?php  echo 'Location:' . $sname['location'] ;	?><br>
@@ -140,13 +142,13 @@ $rname = array('reviewer'=> $doc["reviewer"],'grade' => $doc["grade"],'rate' => 
 			<div class="row">
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter"><?php echo $dname['avgrate']; ?></span></h3>
+						<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter"><?php echo (float)($rate/$num); ?></span></h3>
 						<p>Average Rating</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter"><?php echo $dname["count"]; ?></span></h3>
+						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter"><?php echo $num; ?></span></h3>
 						<p>Reviewer Number</p>
 					</div>
 				</div>
