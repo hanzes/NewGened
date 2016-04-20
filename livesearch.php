@@ -47,7 +47,6 @@ h1{
 section{
   width: 100%;
   height: 100%;
-  background-image: url(http://tinyurl.com/loopq2c);
   background-size: cover;
   background-position: center;
 }
@@ -308,7 +307,7 @@ a h1{
   </style>
  </head>
  <body>
-   
+
   <section>
   <form action="">  
     <input type="search" placeholder="Search..." id="search" type="text" data-list=".content"/>
