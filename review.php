@@ -3,13 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Review</title>
+	<title>Cluster - Creative Portfolio HTML Template</title>
+	
+	<!-- Main CSS file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
 
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/icon/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/icon/apple-touch-icon-57-precomposed.png">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 	
 </head>
 <body>
 
 <?php 
+include 'nav.php'; 	
 
 function array_sort($array, $on, $order=SORT_ASC)
 {
@@ -114,9 +137,9 @@ $arrsci = array_sort($arr2,'rate',SORT_ASC);
 $arrin = array_sort($arr3,'rate',SORT_ASC);
 $arrhum = array_sort($arr4,'rate',SORT_ASC);
 
+?>
 
-					include 'nav.php'; 	
-			?>      
+
 
 <section id="services">
 		<div class="container">
@@ -129,33 +152,33 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-desktop"></i> Web Design</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
+					<h2><i class="fa fa-pencil"></i>WRITING</h2>
+					<p>We Provide you a space for WRITING any GENED Review.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-cogs"></i> Web Developement</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
+					<h2><i class="fa fa-book"></i>READING</h2>
+					<p>You can read any GENED information and all Quality User comments.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-code"></i> Custom Development</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
+					<h2><i class="fa fa-list-ol"></i>RANKING</h2>
+					<p>GENED Ranking System Calculated from User rating and Opinion to specific GENED.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-dashboard"></i> Super Fast Web</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
+					<h2><i class="fa fa-check"></i>RECOMMENDATION</h2>
+					<p>Provide you an UPDATED information for the TOP RANK GENED.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-life-ring"></i> Friendly Support</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
+					<h2><i class="fa fa-tablet"></i>EASY TO READ</h2>
+					<p>NO Complex page, Just Click,Slide and READ</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-weixin"></i> Live Support</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
+					<h2><i class="fa fa-map-marker"></i>MAPS</h2>
+					<p>Find your PLACE to study your interested GENED.</p>
 				</div>
 			</div>
 		</div>
@@ -176,11 +199,11 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 						
 						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/works/portfolio-1.jpg" alt="">
+								<img class="img-responsive" src="images/LOGO/write.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<h5>Write your own</h5>
+									<p>SHARING</p>
 								</div>
 							</div>	
 						</div>
@@ -204,7 +227,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 						
 						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/works/portfolio-1.jpg" alt="">
+								<img class="img-responsive" src="images/LOGO/Science.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrsci[0][0] ?></h5>
@@ -214,7 +237,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 						</div>
 						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/works/portfolio-1.jpg" alt="">
+								<img class="img-responsive" src="images/LOGO/Human.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrhum[0][0] ?></h5>
@@ -225,7 +248,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 					
 						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/works/portfolio-1.jpg" alt="">
+								<img class="img-responsive" src="images/LOGO/Social.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrsoc[0][0] ?></h5>
@@ -235,7 +258,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 						</div>
 						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/works/portfolio-1.jpg" alt="">
+								<img class="img-responsive" src="images/LOGO/saha.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5><?php  echo $arrin[0][0] ?></h5>

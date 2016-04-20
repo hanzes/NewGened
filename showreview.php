@@ -30,8 +30,8 @@
 	
 </head>
 <body>
-<?php 	
-include 'nav.php'; 	
+<?php
+include 'nav.php';
 ?>
 	<br><br><br><br><br><br><br>
 <?php 
@@ -95,10 +95,10 @@ $num = $num+1;
 						<div class="item active text-center">
 
 						
-							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore nesciunt natus ullam possimus quas obcaecati suscipit voluptate facilis cum"</p>
+							<p>"This is the Reviews box. Many User's Reviews will be shown here Please Enjoy!"</p>
 							<div class="st-border"></div>
 							<div class="client-info">
-								<h5>Slide to see All Comments</h5>
+								<h5>Slide to see All Reviews</h5>
 								<span><- -></span>
 							</div>
 						</div>
