@@ -33,12 +33,10 @@
 
 <?php 
 include 'nav.php'; 	
-
 function array_sort($array, $on, $order=SORT_ASC)
 {
     $new_array = array();
     $sortable_array = array();
-
     if (count($array) > 0) {
         foreach ($array as $k => $v) {
             if (is_array($v)) {
@@ -51,7 +49,6 @@ function array_sort($array, $on, $order=SORT_ASC)
                 $sortable_array[$k] = $v;
             }
         }
-
         switch ($order) {
             case SORT_ASC:
                 asort($sortable_array);
@@ -60,15 +57,12 @@ function array_sort($array, $on, $order=SORT_ASC)
                 arsort($sortable_array);
             break;
         }
-
         foreach ($sortable_array as $k => $v) {
             $new_array[$k] = $array[$k];
         }
     }
-
     return $new_array;
 }
-
 $uri = "mongodb://distdbpro:distdb555@ds023570.mlab.com:23570/distdata";
 $m = new MongoClient($uri);
 $db = $m->selectDB("distdata");
@@ -88,7 +82,6 @@ foreach ($cursor as $doc) {
 	}
 	
 	$i++;
-
 }
 $i=0;
 foreach ($cursor2 as $doc) {
@@ -101,7 +94,6 @@ foreach ($cursor2 as $doc) {
 	}
 	
 	$i++;
-
 }
 $i=0;
 foreach ($cursor3 as $doc) {
@@ -114,7 +106,6 @@ foreach ($cursor3 as $doc) {
 	}
 	
 	$i++;
-
 }
 $i=0;
 foreach ($cursor4 as $doc) {
@@ -127,16 +118,11 @@ foreach ($cursor4 as $doc) {
 	}
 	
 	$i++;
-
 }
-
-
-
 $arrsoc = array_sort($arr,'rate',SORT_ASC);
 $arrsci = array_sort($arr2,'rate',SORT_ASC);
 $arrin = array_sort($arr3,'rate',SORT_ASC);
 $arrhum = array_sort($arr4,'rate',SORT_ASC);
-
 ?>
 
 
@@ -177,7 +163,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-map-marker"></i>MAPS</h2>
+					<h2><i class="fa fa-map-marker"></i>MAP</h2>
 					<p>Find your PLACE to study your interested GENED.</p>
 				</div>
 			</div>
@@ -189,7 +175,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 			<div class="row">
 			<div class="col-md-12">
 					<div class="section-title">
-						<h1>Write some reviews</h1>
+						<h1>REVIEW ACTIONS</h1>
 						<span class="st-border"></span>
 					</div>
 				</div>
