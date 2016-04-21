@@ -196,17 +196,31 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 
 			<div class="portfolio-wrapper" >
 			<div class="portfolio-items">
-						
+						<a href = "createreview.php" >
 						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+							
 							<div class="portfolio-content">
-								<img class="img-responsive" src="images/LOGO/write.jpg" alt="">
+								<img class="img-responsive" src="images/LOGO/write.jpg" alt=""> </a>					
 								<div class="portfolio-overlay">
-									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
+									<a href="createreview.php"><i class="fa fa-share"></i></a>
 									<h5>Write your own</h5>
-									<p>SHARING</p>
+									<p>Share your experience</p>
 								</div>
 							</div>	
 						</div>
+						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+							<div class="portfolio-content">
+								<img class="img-responsive" src="images/LOGO/read.jpg" alt="">
+								<div class="portfolio-overlay">
+									<a href="livesearch.php"><i class="fa fa-share"></i></a>
+									<h5>Search</h5>
+									<p>Find your Subject</p>
+								</div>
+							</div>	
+						</div>
+
+						</div></a>
+
 						</div></div></div></div>
 
 
@@ -224,14 +238,14 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 
 			<div class="portfolio-wrapper" >
 			<div class="portfolio-items">
-						
 						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Science.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
+									<a href="<?php echo "showreview.php?SID=" .  $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrsci[0][0] ?></h5>
 									<p><?php  echo $arrsci[0][2] ?></p>
+									
 								</div>
 							</div>	
 						</div>
@@ -239,9 +253,10 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Human.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
+									<a href="<?php echo "showreview.php?SID=" . $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrhum[0][0] ?></h5>
 									<p><?php  echo $arrhum[0][2] ?></p>
+									
 								</div>
 							</div>	
 						</div>
@@ -250,19 +265,21 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Social.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
+									<a href="<?php echo "showreview.php?SID=" . $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrsoc[0][0] ?></h5>
 									<p><?php  echo $arrsoc[0][2] ?></p>
+									
 								</div>
 							</div>	
 						</div>
-						<div class="col-md-3 col-sm-3 work-grid wordpress graphic">
+						<div class="col-md-3 col-sm-3work-grid wordpress graphic">
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/saha.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
+									<a href="<?php echo "showreview.php?SID=" .  $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrin[0][0] ?></h5>
 									<p><?php  echo $arrin[0][2] ?></p>
+									
 								</div>
 							</div>	
 						</div>
