@@ -30,7 +30,7 @@ $m = new MongoClient($uri);
 $db = $m->selectDB("distdata");
 
 $coll = $db->reviews;
-$cursor = $coll->find(array('reviewer' => $_SESSION['username']));
+
 			?>         
 <br>
 <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
@@ -38,10 +38,10 @@ $cursor = $coll->find(array('reviewer' => $_SESSION['username']));
 		<div class="col-md-4 bg_blur ">
 		</div>
         <div class="col-md-8  col-xs-12">
-           <img src="img/pf/1.jpg" class="img-thumbnail picture hidden-xs" />
-           <img src="img/pf/1.jpg" class="img-thumbnail visible-xs picture_mob" />
+           <img src="img/<?php echo $_GET["username"];?>.jpg" class="img-thumbnail picture hidden-xs" />
+           <img src="img/<?php echo $_GET["username"];?>.jpg" class="img-thumbnail visible-xs picture_mob" />
            <div class="header">
-                <h1>Hello, <?php echo $_SESSION['username'];?></h1>
+                <h1>About, <?php echo $_GET["username"];?></h1>
                 <h4>คณะหมูกรอบ</h4>
                 <span>กำกำ</span>
            </div>
@@ -50,36 +50,19 @@ $cursor = $coll->find(array('reviewer' => $_SESSION['username']));
 
 	<div class="row nav">   
         <div class="col-md-4">
-		<form action="setpic.php" method="post">
-<table width="343" border="1">
-<tr>
-<td>Upload Profile picture</td>
-<td><input type="file" name="fileToUpload" id="fileToUpload"></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Submit"></td>
-</tr>
-</table>
-</form>
+		<?php
+			if($_SESSION['check'] == 1){
+				?>
+
+	<form enctype="multipart/form-data" action="upload.php" method="post">
+    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+    Choose a file to upload: <input name="uploaded_file" type="file" />
+    <input type="submit" value="Upload" />
+  </form> 
+  <?php
+	}
+				?>
 </div>
-<?php
-$target_dir = "img/pf/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
-}
-?>
         <div class="col-md-8 col-xs-12" style="margin: 0px;padding: 0px;">
             <div class="col-md-12 col-xs-12 well"><i class="fa fa-weixin fa-lg"></i> 16</div>
         </div>
@@ -105,6 +88,7 @@ if(isset($_POST["submit"])) {
 
         <tbody>
 		<?php 
+$cursor = $coll->find(array('reviewer' => $_GET["username"]));
 foreach ($cursor as $doc) {
 $rname = array('SID'=> $doc['SID'],'title' => $doc['title'],'category' => $doc['category']) ;
 ?>

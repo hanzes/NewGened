@@ -266,17 +266,17 @@ else {
 				<div class="loginmodal-container">
 					<h1>Signup to Your Account</h1><br>
 				  <form action="checksign.php" method="post">
-					<input type="text" name="user" placeholder="Username">
+					<input type="text" name="username" placeholder="Username">
 					<input type="password" name="password" placeholder="Password">
 					<input type="text" name="email" placeholder="Email">
-					<input type="text" name="sid" placeholder="Student ID">
+					<input type="text" name="stdid" placeholder="Student ID">
 				<div class="form-group">
-  <label for="sel1">Select list:</label>
-  <select class="form-control" id="sel1">
+  <label for="fac">Select list:</label>
+  <select class="form-control" id="fac" name="fac">
       <option value="" disabled selected>Choose your faculty</option>
       <option value="Faculty of Applied Health Sciences">Faculty of Applied Health Sciences</option>
       <option value="Faculty of Architecture">Faculty of Architecture</option>
-      <option value="Faculty of Arts3">Faculty of Arts3</option>
+      <option value="Faculty of Arts">Faculty of Arts</option>
 	  <option value="Faculty of Commerce and Accountancy">Faculty of Commerce and Accountancy</option>
       <option value="Faculty of Communication Arts">Faculty of Communication Arts</option>
       <option value="Faculty of Dentistry">Faculty of Dentistry</option>

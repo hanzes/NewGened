@@ -33,10 +33,12 @@
 
 <?php 
 include 'nav.php'; 	
+
 function array_sort($array, $on, $order=SORT_ASC)
 {
     $new_array = array();
     $sortable_array = array();
+
     if (count($array) > 0) {
         foreach ($array as $k => $v) {
             if (is_array($v)) {
@@ -49,6 +51,7 @@ function array_sort($array, $on, $order=SORT_ASC)
                 $sortable_array[$k] = $v;
             }
         }
+
         switch ($order) {
             case SORT_ASC:
                 asort($sortable_array);
@@ -57,12 +60,15 @@ function array_sort($array, $on, $order=SORT_ASC)
                 arsort($sortable_array);
             break;
         }
+
         foreach ($sortable_array as $k => $v) {
             $new_array[$k] = $array[$k];
         }
     }
+
     return $new_array;
 }
+
 $uri = "mongodb://distdbpro:distdb555@ds023570.mlab.com:23570/distdata";
 $m = new MongoClient($uri);
 $db = $m->selectDB("distdata");
@@ -82,6 +88,7 @@ foreach ($cursor as $doc) {
 	}
 	
 	$i++;
+
 }
 $i=0;
 foreach ($cursor2 as $doc) {
@@ -94,6 +101,7 @@ foreach ($cursor2 as $doc) {
 	}
 	
 	$i++;
+
 }
 $i=0;
 foreach ($cursor3 as $doc) {
@@ -106,6 +114,7 @@ foreach ($cursor3 as $doc) {
 	}
 	
 	$i++;
+
 }
 $i=0;
 foreach ($cursor4 as $doc) {
@@ -118,11 +127,16 @@ foreach ($cursor4 as $doc) {
 	}
 	
 	$i++;
+
 }
+
+
+
 $arrsoc = array_sort($arr,'rate',SORT_ASC);
 $arrsci = array_sort($arr2,'rate',SORT_ASC);
 $arrin = array_sort($arr3,'rate',SORT_ASC);
 $arrhum = array_sort($arr4,'rate',SORT_ASC);
+
 ?>
 
 
@@ -191,7 +205,6 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 									<a href="createreview.php"><i class="fa fa-share"></i></a>
 									<h5>Write your own</h5>
 									<p>Share your experience</p>
-
 								</div>
 							</div>	
 						</div>
@@ -229,7 +242,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Science.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="<?php echo "showreview.php?SID=" .  $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
+									<a href="<?php echo "showreview.php?SID=" . echo $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrsci[0][0] ?></h5>
 									<p><?php  echo $arrsci[0][2] ?></p>
 									
@@ -240,7 +253,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Human.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="<?php echo "showreview.php?SID=" . $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
+									<a href="<?php echo "showreview.php?SID=" . echo $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrhum[0][0] ?></h5>
 									<p><?php  echo $arrhum[0][2] ?></p>
 									
@@ -252,7 +265,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/Social.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="<?php echo "showreview.php?SID=" . $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
+									<a href="<?php echo "showreview.php?SID=" . echo $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrsoc[0][0] ?></h5>
 									<p><?php  echo $arrsoc[0][2] ?></p>
 									
@@ -263,7 +276,7 @@ $arrhum = array_sort($arr4,'rate',SORT_ASC);
 							<div class="portfolio-content">
 								<img class="img-responsive" src="images/LOGO/saha.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="<?php echo "showreview.php?SID=" .  $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
+									<a href="<?php echo "showreview.php?SID=" . echo $arrsci[0][2]; ?>"><i class="fa fa-share"></i></a>
 									<h5><?php  echo $arrin[0][0] ?></h5>
 									<p><?php  echo $arrin[0][2] ?></p>
 									
